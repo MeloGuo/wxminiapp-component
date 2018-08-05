@@ -1,0 +1,6 @@
+<!--components/count-down/count-down.wxml-->
+<view class="count-down">
+  <view>
+    <text>{{countDownTime}}</text>
+  </view>
+</view>
