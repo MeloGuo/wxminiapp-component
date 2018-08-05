@@ -1,0 +1,27 @@
+{
+  "name": "wxminiapp-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeloGuo/wxminiapp-component.git"
+  },
+  "author": "MeloGuo <guoziliang199606@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MeloGuo/wxminiapp-component/issues"
+  },
+  "homepage": "https://github.com/MeloGuo/wxminiapp-component#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
