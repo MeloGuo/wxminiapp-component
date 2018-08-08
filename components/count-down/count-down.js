@@ -10,7 +10,7 @@ Component({
         if (this.timer) {
           this.clearTimer()
         }
-  
+
         this.init()
         this.runCountDown(this.parseDate(newVal))
       }
@@ -22,7 +22,7 @@ Component({
   },
 
   attached: function () {
-    if (this.properties.initDuration == 0) {
+    if (this.properties.initDuration === 0) {
       this.setEndContent(this.properties.endContent)
     }
   },
@@ -31,7 +31,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    countDownTime: '',
+    countDownTime: ''
   },
 
   timer: null,
@@ -67,10 +67,10 @@ Component({
       this.setCountDownTime(this.countDown(initDuration))
 
       this.timer = setInterval(() => {
-        if (this.flag == true) {
-          clearInterval(this.timer)          
+        if (this.flag === true) {
+          clearInterval(this.timer)
           this.setEndContent(this.properties.endContent)
-          
+
           return undefined
         }
 
@@ -99,7 +99,7 @@ Component({
     setEndContent: function (countDownTime) {
       if (countDownTime) {
         this.setData({ countDownTime })
-      }      
+      }
     },
 
     clearTimer: function () {
@@ -108,8 +108,8 @@ Component({
     },
 
     parseDate: function (date) {
-      if (typeof date == 'string') {
-        return Math.floor((+new Date(date) / 1000)) - Math.floor((+new Date / 1000))
+      if (typeof date === 'string') {
+        return Math.floor((+new Date(date) / 1000)) - Math.floor((+new Date() / 1000))
       }
 
       return date
