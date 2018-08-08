@@ -24,5 +24,14 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "standard": {
+    "globals": [
+      "wx",
+      "getApp",
+      "Page",
+      "getCurrentPage",
+      "Component"
+    ]
   }
 }
